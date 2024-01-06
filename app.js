@@ -25,11 +25,11 @@ function display(dataObject) {
     `
     <h2 id="special">Chef's Special :</h2>     
     <div class="random_recipe_div">
-    <img id="random_dish"src="${dish}" alt="">
+    <img id="random_dish" class="open_btn_recipe" src="${dish}" alt="">
     <h2>${dish_name}</h2>
-    <button id="open_btn_recipe">Show Recipe</button>
     </div>
     `;
+    // <button id="open_btn_recipe">Show Recipe</button>
   // creating the list of ingredients for random recipe with the help of forEach.
   let list = document.getElementById("list_ingredients");
   for (let i = 1; i < 21; i++) {
@@ -97,7 +97,7 @@ function searchCategory(recipe) {
 // this function is for modal functionality.
 function modalController() {
   console.log("here");
-  let openBtn = document.getElementById("open_btn_recipe");
+  let openBtn = document.querySelector(".open_btn_recipe");
   let closeBtn = document.getElementById("close_img");
   let modal = document.querySelector(".modal");
 
