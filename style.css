@@ -43,14 +43,14 @@ body{
     border-bottom-right-radius: 0px;
     border: none;
 }
-#search_btn{
+#search_btn1{
     height: 35px;
     width: 60px;
     border: none;
     border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
-#search_btn:hover{
+#search_btn1:hover{
     text-decoration: underline;
     cursor: pointer;
 }
