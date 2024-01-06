@@ -26,7 +26,7 @@ function display(dataObject) {
     <h2 id="special">Chef's Special :</h2>     
     <div class="random_recipe_div">
     <img id="random_dish" class="open_btn_recipe" src="${dish}" alt="">
-    <h2>${dish_name}</h2>
+    <h2 id="name_dish">${dish_name}</h2>
     </div>
     `;
     // <button id="open_btn_recipe">Show Recipe</button>
