@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+.nav{
+    background-color: rgb(255,239,213);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body{
+    background-color: rgb(255,228,181);
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#description{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    padding: 0px 40px 0px 40px;
+    margin: 80px 90px 10px 90px;
+}
+
+
+/* Search */
+.search_bar{
+    margin: 25px;
+    display: flex;
+}
+#search{
+    height: 35px;
+    width: 230px;
+    border-radius: 5px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border: none;
+}
+#search_btn{
+    height: 35px;
+    width: 60px;
+    border: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#search_btn:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* styling for random dish */
+#random_dish{
+    border-radius: 30px;
+    width: 350px;
+    margin-bottom: 20px;
+}
+.random_recipe{
+    margin: 10px;
+    margin-top: 80px;
+}
+.random_recipe_div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#special{
+    text-decoration: underline;
+    margin: 20px;
+    font-size: 30px;
+}
+
+
+/* recipe search results styling */
+#results{
+    left: 10.8%;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px;
+}
+.searchresults{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#result_name{
+    margin: 110px 30px 30px 30px;
+    text-decoration: underline;
+}
+.search_results_imgs{
+    margin: 10px;
+}
+.search_results_imgs h2{
+    width:400px ;
+    font-size: 20px;
+}
+#res_img{
+    border-radius: 30px;
+    width: 350px;
+}
+#dish_Name{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#dish_Name:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* modal */
+.modal{
+    border-radius: 30px;
+    height: 450px;
+    background-color: white;
+    width: 430px;
+    padding: 2vh;
+    position: fixed;
+    overflow-y: scroll;
+    top: 26%;
+    left: 35%;
+    border: 3px solid palegoldenrod;
+    box-shadow: 0 0 0 1000px #00000080;
+    display: none;
+}
+#close_img{
+    position: absolute;
+    top: 1%;
+    margin-left: 390px;
+    cursor: pointer;
+}
+.context{
+    margin: 20px;
+}
+#list_ingredients{
+    margin-left: 36px;
+}
+#list_ingredients:hover{
+    cursor: pointer;
+}
+#ingredient:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+/* show recipe button for modal */
+#open_btn{
+    margin-top: 40px;
+}
+#open_btn_recipe{
+    border: none;
+}
+#open_btn_recipe:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* footer styling */
+footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+}
+footer img{
+    border-radius: 30%;
+    height: 200px;
+    width: 200px;
+}
+.footer{
+    flex-direction: column;
+    text-align: right;
+}
+span{
+    cursor: pointer;
+}
+#bramhi{
+    margin: 10px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 425px){
+    #description{
+        display: none;
+    }
+    #result_name{
+        margin-right: 70px;
+    }
+    .search_results_imgs{
+        margin-left: 30px;
+    }
+    footer img{
+        height: 150px;
+        width: 150px;
+    }
+    #bramhi{
+        font-size: 18px;
+    }
+    #bramhi1{
+        font-size: 17px;
+    }
+    #kalvian{
+        font-size: 15px;
+    }
+    .modal{
+    border-radius: 30px;
+    height: 350px;
+    background-color: white;
+    width: 230px;
+    padding: 2vh;
+    position: fixed;
+    overflow-y: scroll;
+    top: 26%;
+    left: 15%;
+    }
+    #close_img{
+    position: absolute;
+    top: 1%;
+    margin-left: 190px;
+    cursor: pointer;
+    }
+    .context{
+    margin: 20px;   
+    }
+    #list_ingredients{
+    margin-left: 36px;
+    }
+    #list_ingredients:hover{
+    cursor: pointer;
+    }   
+    #ingredient:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    }
+}
