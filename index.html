@@ -6,32 +6,37 @@
     <title>Gourmade</title>
     <link rel="icon" href="./Assests/logo_title.jpeg">
     <link rel="stylesheet" href="style.css">
-    <script src="./app.js"></script>
+    
 </head>
 <body>
+    <!-- header with logo -->
     <header class="nav">
         <div id="logo"><img src="./Assests/logo.png" height="100px" width="100px" alt="logo"></div>
         <div id="logo_name"><img src="./Assests/name.png" height="90px" width="300px" alt=""></div>
     </header>
     
+    <!-- description and searchbar -->
     <div class="content">
         <div id="description">
             <p>Dive into the world of handcrafted cuisine with Gourmade. We handpick seasonal ingredients, source from passionate artisans, and translate their magic into accessible recipes for home cooks like you. Explore diverse flavors, learn cooking techniques, and discover the stories behind each dish. Gourmade is your gateway to a world of culinary artistry, all from the comfort of your own kitchen.</p>
         </div>
         <div class="search_bar">
             <input placeholder="Search Recipe By Category" id="search">
-            <button id="search_btn">search</button>
+            <button id="search_btn1">search</button>
         </div>    
     </div>
+
+    <!--  random recipe portion -->
     <div class="random_recipe">
         <!-- <h2 id="special">Chef's Special :</h2>
         <div class="random_recipe_div">
             <img id="random_dish"src="./Assests/baadshahbrahmi1.gif" alt="">
-            <h2>Name of the dish</h2>
+            <h2 id="name_dish">Name of the dish</h2>
             <button id="open_btn_recipe">Show Recipe</button>
         </div> -->
     </div>
    
+    <!-- search bar results portion -->
     <div id="results">
         <p id="result_name">Search Results :</p>
         <div class="searchresults" id="searchedDish">
@@ -44,6 +49,8 @@
             </div> -->
         </div>
     </div>
+
+    <!-- modal portion -->
     <div class="modal">
         <div class="context">
             <img id="close_img" src="./Assests/close.webp" height="30px" width="30px" alt="close_img">
@@ -56,6 +63,8 @@
             <li>Ingredients1</li> -->
         </ul>
     </div>
+
+    <!-- footer portion -->
     <footer>
         <div>
             <h2 id="bramhi">Brought you by</h2>
@@ -66,5 +75,6 @@
             <p id="kalvian">Made with love ❤️</p>
         </div>
     </footer>
+    <script src="./app.js"></script>
 </body>
 </html>
