@@ -76,7 +76,9 @@ body{
     margin: 20px;
     font-size: 30px;
 }
-
+#name_dish:hover{
+    text-decoration: underline;
+}
 
 /* recipe search results styling */
 #results{
